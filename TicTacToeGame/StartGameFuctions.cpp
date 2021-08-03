@@ -14,4 +14,5 @@ void Acquaintance()
 {
 	cout << ("Are you ready to start the game?");
 	string input; cin >> input;
+	// TODO Register the analysis of the response
 }
