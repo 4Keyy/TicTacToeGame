@@ -12,14 +12,19 @@
 #include <stdio.h> // Standard library for working with the C console
 #include <Windows.h> // Library for working with Windows OC files
 #include <time.h> // Library for working with time
+#include "ConnectingFunctions.h" // Connecting a header file with game functions
 
 // Connecting the required namespace
 using namespace std;
 
-// Creating global variables
-char[9]{ '-', '-', '-', '-', '-', '-', '-', '-', '-' };
+// * Creating global variables
+// Variable for storing the initial appearance of the field
+char cell[9]{ '-', '-', '-', '-', '-', '-', '-', '-', '-' };
+// Variables storing player names
+string FirstPlayerName = "";
+string SecondPlayerName = "";
 
-// Main function
+// * Main function
 void main()
 {
 	// Write this for normal work with Cyrillic in the console

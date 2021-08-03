@@ -15,7 +15,7 @@ public:
 	void Acquaintance();
 
 	// This function will rip the field to players using a global variable initialized in MainSource
-	void Field—reation();
+	void FieldCreation();
 
 	// Function that deduces the rules of playing tic-tac-toe
 	void DameRules();
