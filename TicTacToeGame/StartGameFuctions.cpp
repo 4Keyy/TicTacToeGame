@@ -10,7 +10,7 @@
 using namespace std;
 
 // In this functions we ask users them names and assign them their shapes.
-void Acquaintance()
+void StartGameFunctions::Acquaintance()
 {
 	cout << ("Are you ready to start the game?");
 	string input; cin >> input;

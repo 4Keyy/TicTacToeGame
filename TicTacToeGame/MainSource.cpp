@@ -19,18 +19,21 @@ using namespace std;
 
 // * Creating global variables
 // Variable for storing the initial appearance of the field
-char cell[9]{ '-', '-', '-', '-', '-', '-', '-', '-', '-' };
+char cell[3][3]
+{
+	{'-', '-', '-'},
+	{'-', '-', '-'},
+	{'-', '-', '-'}
+};
 // Variables storing player names
-string FirstPlayerName = "";
-string SecondPlayerName = "";
+string FirstPlayerName;
+string SecondPlayerName;
 
 // * Main function
 void main()
 {
-	// Write this for normal work with Cyrillic in the console
-	setlocale(0, "");
 
 	// Write this to make the main function work nicely.
-	system("pause");
+	system("pause>>nul");
 	system("cls");
 }
