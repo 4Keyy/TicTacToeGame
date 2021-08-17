@@ -5,21 +5,31 @@
 
 // Also for this file you need to add libraries
 #include <iostream> // Standard library for working with C ++ console
+#include <string> // Library for working with string variables
 
 // I will store the functions in classes, and call them through the created objects in the main functions, create a class
-// In this class i will keep functions for start the game, all functions use abstraction so there won't be a private line
-class StartGameFunctions
+class SayHello
 {
 public:
-	// In this functions we ask users them names and assign them their shapes.
-	void Acquaintance();
+	void Hello();
+	void AboutTheGame();
+	void GameRules();
+};
 
-	// This function will rip the field to players using a global variable initialized in MainSource
-	void FieldCreation();
+class GetNamePlayers
+{
+	// Variavles for storing the player names
+	string m_SecondPlayerName;
+	string m_FirstPlayerName;
 
-	// Function that deduces the rules of playing tic-tac-toe
-	void DameRules();
-
-	// The beginning of the game, the players' moves and the entry of certain symbols into the cells
-	void StartGame();
+public:
+	void GetName()
+	{
+		cout << ("Введите имя 1 игрока: "); cin >> m_FirstPlayerName;
+		cout << ("Введите имя 2 игрока: "); cin >> m_SecondPlayerName;
+	}
+	void SaveNames(string FirstPlayerName, string SecondPlayerName)
+	{
+		// ! Прописать функцию создающую файл с именами игроков 
+	}
 };

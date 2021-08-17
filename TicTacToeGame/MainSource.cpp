@@ -17,23 +17,12 @@
 // Connecting the required namespace
 using namespace std;
 
-// * Creating global variables
-// Variable for storing the initial appearance of the field
-char cell[3][3]
-{
-	{'-', '-', '-'},
-	{'-', '-', '-'},
-	{'-', '-', '-'}
-};
-// Variables storing player names
-string FirstPlayerName;
-string SecondPlayerName;
-
 // * Main function
-void main()
+int main()
 {
 
 	// Write this to make the main function work nicely.
 	system("pause>>nul");
 	system("cls");
+	return 0;
 }

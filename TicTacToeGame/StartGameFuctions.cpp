@@ -5,14 +5,29 @@
 #include <Windows.h> // Library for working with Windows OC files
 #include <time.h> // Library for working with time
 #include "ConnectingFunctions.h" // Connecting a header file with game functions
+#include <regex> // To use regular expressions
 
 // Connecting the required namespace
 using namespace std;
 
-// In this functions we ask users them names and assign them their shapes.
-void StartGameFunctions::Acquaintance()
+void SayHello::Hello()
 {
-	cout << ("Are you ready to start the game?");
-	string input; cin >> input;
-	// TODO Register the analysis of the response
+	cout << ("Добро пожаловать в игру \"Крестики-нолики\"!") << endl;
+	cout << ("Что вы хотите сделать..?") << endl;
+	cout << ("1. Начать игру.") << endl << ("2. Ознакомиться с правилами игры.") << endl << ("Посмотреть информацию о проекте.") << endl;
+	char vote; cin >> vote;
+	if (vote == '1') {
+		// ! Функция начала игры
+	} else if (vote == '2') {
+		SayHello::GameRules();
+	} else if (vote == '3') {
+		SayHello::AboutTheGame();
+	} else {
+		cout << ("Нет такого варианта ответа!\nПопробуй еще рaз!\n");
+		int main();
+	}
+}
+void SayHello::GameRules()
+{
+	
 }
