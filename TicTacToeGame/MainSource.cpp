@@ -19,7 +19,11 @@ using namespace std;
 
 // * Creating global variables
 // Variable for storing the initial appearance of the field
-char cell[9]{ '-', '-', '-', '-', '-', '-', '-', '-', '-' };
+char cell[3][3]
+{
+	{'-','-','-'},
+	{'-', '-', '-'}
+};
 // Variables storing player names
 string FirstPlayerName = "";
 string SecondPlayerName = "";
