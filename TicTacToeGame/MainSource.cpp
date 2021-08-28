@@ -20,6 +20,7 @@ using namespace std;
 // * Main function
 int main()
 {
+	setlocale(0, "");
 	MainMenu obj;
 	obj.SayHello();
 	// Write this to make the main function work nicely.
