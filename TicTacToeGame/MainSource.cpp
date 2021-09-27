@@ -1,5 +1,6 @@
 // * The simplest tic-tac-toe game.
 /// * Written by - 4Keyy. Repository on GitHub - https://github.com/4Keyy/TicTacToeGame
+/// * Help in writing a project - https://github.com/LinaFletcher
 /// * The code is written in the Visual Studio program, therefore it has third-party files for the program to work correctly in Visual Studio
 // ---------------------------------------------------------------------------------------- //
 // My first project, which was written by myselfand fully commented out.
@@ -17,23 +18,20 @@
 // Connecting the required namespace
 using namespace std;
 
-// * Creating global variables
-// Variable for storing the initial appearance of the field
-char cell[3][3]
-{
-	{'-', '-', '-'},
-	{'-', '-', '-'},
-	{'-', '-', '-'}
-};
-// Variables storing player names
-string FirstPlayerName;
-string SecondPlayerName;
+// Прописать после функйии кто когда ходит. 
+// Прописать Сохранение имен и побед в файл
+// Прописать алгоритм по анализу введённой клетки игроком в массиве
+
 
 // * Main function
-void main()
-{
+void main() {
+	srand(time(NULL));
+	setlocale(0, "");
+
+	MainMenu obj;
+	obj.SayHello();
 
 	// Write this to make the main function work nicely.
-	system("pause>>nul");
+	system("pause>>void");
 	system("cls");
 }
